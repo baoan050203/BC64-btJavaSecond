@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bài tập java 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- -- linl css ---  -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- --quản lý tuyển sinh--  -->
+    <div class="container">
+      <h2>Tính điểm đậu</h2>
+        <div class="form-group">
+            <label for="diemChuan">nhập điểm chuẩn</label>
+            <input type="number"
+              class="form-control" name="" id="diemChuan" aria-describedby="helpId"   placeholder="Vui lòng nhập điểm chuẩn">
+          </div>
+        <select class="form-control form__input mt-3 " name="" id="selLocationKV">
+            <option value="0">Chọn khu vực</option>
+            <option value="2">A</option>
+            <option value="1">B</option>
+            <option value="0.5">C</option>
+        </select>
+        <select class="form-control form__input mt-3" name="" id="selLocationDT">
+            <option value="0">Chọn đối tượng</option>
+            <option value="2.5">1</option>
+            <option value="1.5">2</option>
+            <option value="1">3</option>
+        </select>
+        <div class="form-group mt-3">
+          <label for="diemMon1">nhập điểm môn thứ nhất</label>
+          <input type="number"
+            class="form-control" name="" id="diemMon1" aria-describedby="helpId"   placeholder="Vui lòng nhập điểm ">
+        </div>
+        <div class="form-group">
+          <label for="diemMon2">nhập điểm môn thứ hai</label>
+          <input type="number"
+            class="form-control" name="" id="diemMon2" aria-describedby="helpId"   placeholder="Vui lòng nhập điểm ">
+        </div>
+        <div class="form-group">
+          <label for="diemMon3">nhập điểm môn thứ ba</label>
+          <input type="number"
+            class="form-control" name="" id="diemMon3" aria-describedby="helpId"   placeholder="Vui lòng nhập điểm ">
+        </div>
+        <button class="btn btn-dark mt-3" id="btn1">tính điểm</button>
+        <div class="mt-2 bg-primary text-white p-3" id="ketQua"></div>
+    </div>
+<!-- -- tính tiền điện --  -->
+    <div class="container">
+      <h2>Tính kw Điện</h2>
+      <div class="form-group">
+        <label for="TenKhach">nhập tên</label>
+        <input type="text"
+          class="form-control" name="" id="tenKhachHang" aria-describedby="helpId"   placeholder="Vui lòng nhập tên ">
+      </div>
+      <div class="form-group">
+        <label for="soKW">nhập số Kw điện</label>
+        <input type="number"
+          class="form-control" name="" id="soKW" aria-describedby="helpId"   placeholder="Vui lòng nhập số kw">
+      </div>
+      <button class="btn btn-dark mt-3" id="btn2">tính số KW</button>
+        <div class="mt-2 bg-primary text-white p-3" id="ketQua1"></div>
+    </div>
+<!-- -- tính thuế thu nhập cá nhân --  -->
+    <div class="container">
+      <h2>Tính thuế thu nhập cá nhân</h2>
+      <div class="form-group">
+        <label for="TenKhach1">nhập họ tên</label>
+        <input type="text"
+          class="form-control" name="" id="tenKhachHang1" aria-describedby="helpId"   placeholder="Vui lòng nhập tên ">
+      </div>
+      <div class="form-group">
+        <label for="thuNhapNam">nhập tổng thu nhập năm</label>
+        <input type="number"
+          class="form-control" name="" id="thuNhapNam" aria-describedby="helpId"   placeholder="Vui lòng nhập tổng thu nhập">
+      </div>
+      <div class="form-group">
+        <label for="soNguoiPhuThuoc">nhập số người phụ thuộc</label>
+        <input type="number"
+          class="form-control" name="" id="soNguoiPhuThuoc" aria-describedby="helpId"   placeholder="Vui lòng nhập số người phụ thuộc">
+      </div>
+      <button class="btn btn-dark mt-3" id="btn3">tính số KW</button>
+        <div class="mt-2 bg-primary text-white p-3" id="ketQua2"></div>
+    </div>
+<!-- -- tính tiền cap --  -->
+    <div class="container">
+      <h2>Tính tiền cáp </h2>
+        
+        <select class="form-control form__input mt-3 " name="" id="loaiKhachid">
+            <option value="0">Chọn loại khách hàng</option>
+            <option value="2">tư nhân</option>
+            <option value="1">doanh nghiệp</option>
+        </select>
+        
+        <div class="form-group mt-3">
+          <label for="diemMon1">nhập mã khách hàng</label>
+          <input type="text"
+            class="form-control" name="" id="maKhachHang" aria-describedby="helpId"   placeholder="Vui lòng nhập mã khách hàng ">
+        </div>
+        <div class="form-group">
+          <label for="diemMon2">nhập số kênh cao cấp</label>
+          <input type="number"
+            class="form-control" name="" id="sokenhCaoCap" aria-describedby="helpId"   placeholder="Vui lòng nhập số kênh cao cấp ">
+        </div>
+        <div class="form-group">
+          <label for="diemMon3">nhập số kết nối dành cho doanh nghiệp</label>
+          <input type="number"
+            class="form-control" name="" id="soKetNoi" aria-describedby="helpId"   placeholder="Vui lòng nhập số kênh ">
+        </div>
+        <button class="btn btn-dark mt-3" id="btn4">tính điểm</button>
+        <div class="mt-2 bg-primary text-white p-3" id="ketQua3"></div>
+    </div>
+
+        
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
